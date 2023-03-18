@@ -108,7 +108,7 @@ nav ul li a:hover:after {
     linear-gradient(15deg, red , blue); 
     width: 35%;
     position: relative;
-    left: 1150px;
+    left: 1050px;
     top: 200px;
     width: 20%;
 }
