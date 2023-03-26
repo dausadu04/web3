@@ -22,31 +22,54 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20%;
 }
 
 .logo{
-    width: 5%;
-    height: 5%;
-    margin-left: 10%;
+    width: auto;
+    height: 60px;
+    margin-left: 5%;
 }
 
 .nav{
     display: flex;
     align-items: center;
     gap: 20%;
-    height: 18vh;
+    height: 15vh;
     margin-right: 1%;
     border-radius: 30%;
 }
 .nav li:first-child{
     margin-right: 1%;
 }
-.nav:hover{
+.nav li a:hover{
     color:#fd4766;
-    text-decoration-color: #fd4766;
 }
+.nav li a{
+    display: inline-block;
+    color: #000;
+    line-height: 1.5;
+    text-decoration: none;
+    cursor: pointer;
+}  
+.nav li a::after{
+    background-color: #fd4766;
+    display: block;
+    content:"";
+    height: 3px;
+    width: 0%;
+    --webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    bottom: 0;
+}
+.nav li a:hover:after,
+.nav a:focus:after{
+    width: 100%;
+}
+
 .resume{
-    margin-right: 10%;
+    margin-right: 4%;
     padding: 16px 40px;
     border-radius: 500px;
     display: inline-block;
@@ -63,10 +86,20 @@ li{
     border-color: #fd4766;
     color: #fd4766;
 }
-
+.main{
+    height: 75%;
+}
+.main img{
+    width: 25%;
+}
+.main p{
+    
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main p{
     color: #000;
-}
-.main{
-    height: 5vh;
 }
